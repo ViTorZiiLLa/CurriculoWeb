@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Vitor Henrique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <header>
+  <nav>
+    <div class="logo">
+      <a href="index.html">Currículo do Vitor</a>
+    </div>
+    <div class="links">
+      <ul class="nav-items">
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <img class="foto-perfil" src="assets/img/file.enc">
+        </div>
+        <div class="col-6 text-center">
+          <h1 class="tituloIntroducao" id="typing-text"></h1>
+          <p class="textoIntroducao">Me chamo Vitor Henrique Carvalho Silva, amante de jogos e computação, acredito fielmente que buscar a cada dia melhorarmos como pessoa faz com que portas sejam abertas. O estudo fez com que antinjamos melhores conhecimentos, porém acredito que ser uma pessoa melhor vai além do que somente conhecimento pode oferecer e buscar ser respeitável faz com que tenhamos ambientes de trabalhos harmônicos. exemplo de texto sendo digitado.</p>
+        </div>
+      </div>
+        <script>
+          $(document).ready(function(){
+              var text = "Estudante de engenharia da computação!";
+              var index = 0;
+              var typingSpeed = 150; // Velocidade de digitação (em milissegundos)
+              
+              function typeWriter() {
+                  if (index < text.length) {
+                      $('#typing-text').append(text.charAt(index));
+                      index++;
+                      setTimeout(typeWriter, typingSpeed);
+                  }
+              }
+              
+              typeWriter();
+          });
+          </script>
+          </div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Currículo do Vitor</a>
+              </div>
+          <div class="links">
+            <ul class="nav-items">
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="formacao.html">Formação</a></li>
+              <li><a href="habilidades.html">Habilidades</a></li>
+            </ul>
+          </div>
+        </nav>
+        </header>
+        <div class="row">
+            <h1 class="habilidadesPossuidas" id="typing-text"></h1>
+            <div class="dev-icons">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                    <li class="list-inline-item"><img src="assets/img/icons8-dot-net-96.png"></li>
+                    <li class="list-inline-item"><h2 class="itemHabilidade">ASP-NET MVC</h2></li>
+                    <li class="list-inline-item"><img class="iconSQL"src="assets/img/icons8-sql-server-lineal-96.png"></li>
+                </ul>
+            </div>
+            <h1 class="habilidadesPossuidas">Idiomas</h1>
+            <ul>
+                <li class="idiomaFalado">Português nativo</li>
+                <li class="idiomaFalado">Inglês médio</li>
+            </ul>
+            <h1 class="habilidadesPossuidas">Link para visualização de projetos realizados no GitHub</h1>
+            <div class="dev-icons">
+                <a href="https://github.com/ViTorZiiLLa"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                var text = "Habilidades";
+                var index = 0;
+                var typingSpeed = 150; // Velocidade de digitação (em milissegundos)
+                
+                function typeWriter() {
+                    if (index < text.length) {
+                        $('#typing-text').append(text.charAt(index));
+                        index++;
+                        setTimeout(typeWriter, typingSpeed);
+                    }
+                }
+                
+                typeWriter();
+            });
+            </script>
+</body>
+</html>
